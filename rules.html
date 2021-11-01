@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/bot.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+
+    <title>Rules | BlankMC</title>
+  </head>
+  <body style="background-color: rgb(38, 43, 48);">
+    <img src="img/5.png" style="background-color: rgb(38, 43, 48); background-repeat: no-repeat; background-position: center; position:absolute; top:0; left:0; width: 100%; -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0)); z-index: -1;">
+    
+    <!-- <Nav> -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand">BlankMC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.blankmc.com">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.blankmc.com/join">Join</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.blankmc.com/staff">Staff</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.blankmc.com/rules">Rules <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://discord.blankmc.com">Discord</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://store.blankmc.com">Store</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- </Nav> -->
+
+    <!-- <Players> -->
+    <div class="server-status">
+      <!--<b id="players-online">Loading...</b>-->
+      <b id="players-online">123 players online</b>
+    </div>
+    <!-- 
+    <script>
+      fetch("https://mcapi.us/server/status?ip=play.blankmc.com")
+      .then(response => response.json())
+      .then(data =>
+        document.getElementById("players-online").innerHTML = 
+          (data.players.now + " players online play.blankmc.com")
+      )
+    </script>
+    -->
+    <!-- </Players> -->
+
+    <!-- <Rules> -->
+    <br>
+    <div class="container bg-dark">
+      <br>
+      <h3 class="text-light text-center">Rules</h3>
+      <h5 class="text-center" style="color: #5d6873; text-decoration: line-through;">______________________________</h5>
+      <p class="text-muted text-center">Choose a category below to view the rules.<br>
+        Got a question about our rules? Join our Discord and open a ticket!
+      </p>
+
+      <!-- <Grouped Buttons> -->
+      <script>
+        function collapseOthersMinecraft() {
+          $('#collapseMinecraft').collapse('show')
+        };
+
+        function collapseOthersDiscord() {
+          $('#collapseDiscord').collapse('show')
+        };
+      </script>
+      <div class="text-center">
+        <div class="btn-group" role="group" aria-label="rule picker" style="background-image: linear-gradient(to right, rgb(80, 127, 214) , rgb(59, 219, 198));">
+          <button type="button" onclick="collapseOthersMinecraft()" class="btn btn-outline-light" data-toggle="collapse" aria-expanded="true" aria-controls="collapseMc">Minecraft</button>
+          <button type="button" onclick="collapseOthersDiscord()" class="btn btn-outline-light" data-toggle="collapse" aria-expanded="false" aria-controls="collapseDc">Discord</button>
+        </div>
+      </div>
+      <br>
+      <!-- </Grouped Buttons> -->
+
+      <!-- <Minecraft Rules> -->
+      <div class="collapse" id="collapseMinecraft">
+        <div class="card card-body" style="background-color:#444d57">
+          <h3 style="color:#83909c">Minecraft</h3>
+          <p class="text-light">
+            &nbsp;&nbsp;Client Mods:<br>
+            <br>
+            &nbsp;&nbsp;Allowed<br>
+            &nbsp;&nbsp;-Client mods that do not give you an unfair advantage: Minimaps, Optifine, Gamma mods, FPS Boosters, etc<br>
+            &nbsp;&nbsp;-Use at your own discretion. Any issues that arise from client issues cannot be helped by a staff member<br>
+            <br>
+            &nbsp;&nbsp;Not Allowed<br>
+            &nbsp;&nbsp;-All other client mods (such as fly, jump, speed, x-ray, auto clickers, etc.) are  considered against the rules<br>
+            &nbsp;&nbsp;-If you're caught using illegal mods, you will either be warned or banned, depending on the situation<br>
+            <br>
+            <br>
+            &nbsp;&nbsp;Griefing/stealing:<br>
+            <br>
+            &nbsp;&nbsp;Allowed<br>
+            &nbsp;&nbsp;-Heavily discouraged, however, you can only grief unclaimed bases with an inactive owner for minimum of 30 days. Ask a mod for help or open a help ticket<br>
+            <br>
+            &nbsp;&nbsp;Not allowed<br>
+            &nbsp;&nbsp;-Griefing or stealing from a claimed base you are trusted in is not allowed.Grief/stolen items from a trusted individual will not have staff interference<br>
+            &nbsp;&nbsp;-No claim blocking- Claiming outside a players base without permission. All builds must be 150 blocks away from the next claim<br>
+            <br>
+            <br>
+            &nbsp;&nbsp;Advertisement:<br>
+            <br>
+            &nbsp;&nbsp;Allowed<br>
+            &nbsp;&nbsp;-You are allowed to record and stream content from BlankMC<br>
+            &nbsp;&nbsp;-Advertising a town or build on BlankMC<br>
+            <br>
+            &nbsp;&nbsp;Not allowed<br>
+            &nbsp;&nbsp;-It is forbidden to advertise any servers, discords, or mentioning server IPs anywhere except for #self-promo on the discord<br>
+            <br>
+            <br>
+            &nbsp;&nbsp;Abuse of bugs:<br>
+            <br>
+            &nbsp;&nbsp;Allowed<br>
+            &nbsp;&nbsp;-Only allowed to replicate a bug or glitch for the purpose of reporting to staff<br>
+            <br>
+            &nbsp;&nbsp;Not allowed<br>
+            &nbsp;&nbsp;-Use of bugs or glitches aren't allowed unless for purposes noted above<br>
+            <br>
+            <br>
+            &nbsp;&nbsp;Harassment and any chat related offenses:<br>
+            <br>
+            &nbsp;&nbsp;-Any chat or nickname that have profanity, sexual innuendos, mimicking other players or staff are against the rules<br>
+            &nbsp;&nbsp;-Mild jokes are acceptable unless someone asks to stop or is offended<br>
+            &nbsp;&nbsp;-Spamming Chat<br>
+            &nbsp;&nbsp;-Encouraging violence towards anyone<br>
+            &nbsp;&nbsp;-Sharing other players private information<br>
+            <br>
+            <br>
+            &nbsp;&nbsp;Build Restrictions:<br>
+            <br>
+            &nbsp;&nbsp;-Iron farms have a maximum of 20 villagers in a 16 chunk radius<br>
+            &nbsp;&nbsp;-Redstone builds will have a max of 40 per chunk: Hoppers, observers, droppers, etc.<br>
+            &nbsp;&nbsp;-Floating islands may be built above your land only<br>
+            &nbsp;&nbsp;-Flying machines must 100% contained<br>
+            &nbsp;&nbsp;-No flying machine TNT dupers<br>
+            &nbsp;&nbsp;-Building hate symbols<br>
+            &nbsp;&nbsp;-0 tick farms<br>
+            <br>
+            <br>
+            &nbsp;&nbsp;Miscellaneous offenses:<br>
+            <br>
+            &nbsp;&nbsp;-Using loopholes to violate rules<br>
+            &nbsp;&nbsp;-Falsifying reports<br>
+            &nbsp;&nbsp;-Arguing with final decisions made by staff<br>
+            &nbsp;&nbsp;-Alternate Accounts<br>
+            <br>
+            <br>
+            &nbsp;&nbsp;General Reminder:<br>
+            <br>
+            &nbsp;&nbsp;-Be nice to other players. Treat others the way you want to be treated<br>
+            &nbsp;&nbsp;-Use common sense<br>
+          </p>
+        </div>
+        <br>
+      </div>
+      <!-- </Minecraft Rules> -->
+
+      <!-- <Discord Rules> -->
+      <div class="collapse" id="collapseDiscord">
+        <div class="card card-body" style="background-color:#444d57">
+          <h3 style="color:#83909c">Discord</h3>
+          <p class="text-light">
+            &nbsp;&nbsp;-Avoid using derogatory language this discord is meant to be community friendly any kind of offensive language, insults, name calling, and excessive swearing is prohibited<br>
+            &nbsp;&nbsp;-Do not be annoying and spam<br>
+            &nbsp;&nbsp;-Do not post links to other servers, their IPs, other discords that aren't related to BlankMC. We have a self promotion channel dedicated for that<br>
+            &nbsp;&nbsp;-Do not be obnoxious in our voice chats, we also do not tolerate harassment of any kind and ear rape<br>
+            &nbsp;&nbsp;-The BlankMC Discord server abides by all of the Terms of Service set by discord. Ensure that the ToS is being followed when on our server<br>
+            &nbsp;&nbsp;-We do not allow discussion of illegal activities and NSFW content<br> 
+            &nbsp;&nbsp;-We have a zero tolerance policy against impersonation of staff and their abilities<br>
+          </p>
+        </div>
+        <br>
+      </div>
+      <!-- </Discord Rules> -->
+    </div>
+    <!-- </Rules> -->
+
+  </body>
+</html>

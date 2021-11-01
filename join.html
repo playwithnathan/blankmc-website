@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/bot.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0219485f2a.js" crossorigin="anonymous"></script>
+
+    <title>Join | BlankMC</title>
+  </head>
+  <body style="background-color: rgb(38, 43, 48);">
+
+    <!-- <Nav> -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand">BlankMC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.blankmc.com">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.blankmc.com/join">Join <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.blankmc.com/staff">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.blankmc.com/rules">Rules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://discord.blankmc.com">Discord</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://store.blankmc.com">Store</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- </Nav> -->
+
+    <!-- <Players> -->
+    <div class="server-status">
+      <!--<b id="players-online">Loading...</b>-->
+      <b id="players-online">123 players online</b>
+    </div>
+    <!-- 
+    <script>
+      fetch("https://mcapi.us/server/status?ip=play.blankmc.com")
+      .then(response => response.json())
+      .then(data =>
+        document.getElementById("players-online").innerHTML = 
+          (data.players.now + " players online play.blankmc.com")
+      )
+    </script>
+    -->
+    <!-- </Players> -->
+
+    <!-- <Join> -->
+    <div class="container-fluid joinmc" style="margin-top: 1%;">
+      <div class="text-right">
+        <h3 class="text-light">Join Minecraft!</h3>
+        <!--<p id="players-online-join" class="text-light">Loading...</p>-->
+        <p id="players-online-join" class="text-light">123 players online</p>
+        <script>
+          /*
+          fetch("https://mcapi.us/server/status?ip=play.blankmc.com")
+          .then(response => response.json())
+          .then(data =>
+            document.getElementById("players-online-join").innerHTML = 
+              ("There are currently " + data.players.now + "  player(s) online!")
+          )
+          */
+        </script>
+        <br>
+        <br>
+        <h4 id="version-join" class="text-light">Version: 1.16.1</h4>
+        <h4 class="text-light text-break">IP: Ip coming soon!</h4>
+      </div>
+    </div>
+
+    <div class="container-fluid joindc" style="margin-top: 1%;">
+      <div class="text-left">
+        <h3 class="text-light">Join the Community!</h3>
+        <p class="text-light">Join the discord by clicking <a href="#" style="text-decoration: underline;" class="text-light">here</a>!</p>
+        <br>
+        <br>
+        <h4 class="text-light">Open VCs and text channels</h4>
+        <h4 class="text-light">Share screenshots, and talk to other players!</h4>
+      </div>
+    </div>
+
+    <div class="container-fluid join" style="margin-top: 1%; margin-bottom: 1%;">
+      <div class="text-right">
+        <h3 class="text-light">Join BlankMC!</h3>
+        <p class="text-light text-break">BlankMC is a new Minecraft experience!</p>
+        <br>
+        <br>
+        <h4 class="text-light text-break">Custom plugins, friendly community, staff moderation</h4>
+        <h4 class="text-light text-break">Join today!</h4>
+      </div>
+    </div>
+    <!-- </Join> -->
+
+  </body>
+</html>

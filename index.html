@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/bot.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+
+    <title>Home | BlankMC</title>
+  </head>
+  <body style="background-color: rgb(38, 43, 48);">
+
+    <!-- <Nav> -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand">BlankMC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.blankmc.com">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.blankmc.com/join">Join</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.blankmc.com/staff">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.blankmc.com/rules">Rules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://discord.blankmc.com">Discord</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://store.blankmc.com">Store</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- </Nav> -->
+
+    <!-- <Players> -->
+    <div class="server-status">
+      <!--<b id="players-online">Loading...</b>-->
+      <b id="players-online">123 players online</b>
+    </div>
+    <!-- 
+    <script>
+      fetch("https://mcapi.us/server/status?ip=play.blankmc.com")
+      .then(response => response.json())
+      .then(data =>
+        document.getElementById("players-online").innerHTML = 
+          (data.players.now + " players online play.blankmc.com")
+      )
+    </script>
+    -->
+    <!-- </Players> -->
+
+    <!-- <Carousel> -->
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/1.png" class="d-block w-100" alt="img1.png">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/2.png" class="d-block w-100" alt="img2.png">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/3.png" class="d-block w-100" alt="img3.png">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/4.png" class="d-block w-100" alt="img4.png">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/5.png" class="d-block w-100" alt="img5.png">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/6.png" class="d-block w-100" alt="img6.png">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/7.png" class="d-block w-100" alt="img7.png">
+        </div>
+      </div>
+    </div>
+    <!-- </Carousel> -->
+
+    <!-- <Home> -->
+    <div style="background-image: linear-gradient(to right, #3E54D3 , #15cdce);">
+      <h4>&nbsp;</h4>
+    </div>
+  
+    <div class="text-center" style="margin-top: 20px;z-index: 21; margin-bottom: 20px;">
+      <div class="card-deck" style="margin-left: 5%; margin-right:5%;">
+        <div class="card border-light" style="background-color:#44484C">
+          <span style="font-size: 125px; color:cornflowerblue;">
+            <i class="fas fa-door-open" aria-hidden="true"></i>
+          </span>
+          <div class="card-body">
+            <h5 class="card-title text-light">Claim Blocks</h5>
+            <p class="card-text text-white">Claim your land in-game to make sure that only selected players can break it, take from it, and use blocks there!</p>
+          </div>
+        </div>
+        <div class="card border-light" style="background-color:#44484C">
+          <span style="font-size: 125px; color:cornflowerblue;">
+          <i class="fas fa-house-damage" aria-hidden="true"></i>
+          </span>
+          <div class="card-body">
+            <h5 class="card-title text-light">Anti-Grief Protection</h5>
+            <p class="card-text text-white">BlankMC is an anti-grief anti-theft server with staff support! You can mine, build and play without worrying about someone taking or breaking your stuff!</p>
+          </div>
+        </div>
+        <div class="card border-light" style="background-color:#44484C">
+          <span style="font-size: 125px; color:cornflowerblue;">
+            <i class="fas fa-comments" aria-hidden="true"></i>
+          </span>
+          <div class="card-body">
+            <h5 class="card-title text-light">Community</h5>
+            <p class="card-text text-white">We hold community events and support community interaction in-game and on Discord. BlankMC is a place to have fun and make friends!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </Home> -->
+
+  </body>
+</html>
